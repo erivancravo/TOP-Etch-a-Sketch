@@ -3,9 +3,10 @@ body {
   color: white;
   background-color: rgb(90, 198, 235);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-around;
+  padding-top: 80px;
 }
 
 h1 {
@@ -14,31 +15,51 @@ h1 {
 }
 
 #number {
-  border: 0.1px solid white;
+  background-color: rgb(90, 198, 235);
+  border: 0.1px solid black;
   border-radius: 3px;
   box-shadow: 2px 2px 2px;
+  width: 86px;
+  height:35px;
+  font-size: larger;
 }
 
 button {
-  background-color:white;
-  border: 0.1px solid white;
+  width: 90px;
+  height: 40px;
+  background-color:rgb(90, 198, 235);
+  border: 0.1px solid black;
   border-radius: 3px;
   box-shadow: 2px 2px 2px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
-#pergunta {
-  margin: 20px;
-  text-align: center;
+#options {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items:flex-end;
+  border-radius: 4px;
+  box-shadow: 4px 4px 2px black;
+}
+
+#fricking-options {
+  display: flex;
+  flex-direction: column;
 }
 
 #container {
+  background-color: white;
   display: grid;
-  grid-gap: 2px;
-  width:fit-content;
+  grid-gap: 0px;
+  width:550px;
+  height: 550px;
+  box-shadow: 4px 4px 2px black;
 }
 
 .block {
-  width: 30px;
-  height: 30px;
   background-color: white;
 }

@@ -5,13 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Etch-a-Sketch</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.2/tinycolor.min.js"></script>
   <script src="index.js" defer></script>
 </head>
 <body>
-  <div id="pergunta">
-    <h1>Escolha um número:</h1>
-    <input type="number" name="number" id="number">
-    <button id="btn"><strong>enter</strong></button>
+  <div id="options">
+    <div id="question">
+      <input type="number" name="number" id="number">
+      <button id="enter"><strong>ENTER</strong></button>
+    </div>
+    <div id="fricking-options">
+      <button id="eraser"><strong>ERASE</strong></button>
+      <button id="paint"><strong>PAINT</strong></button>
+      <button id="rainbow"><strong>RAINBOW</strong></button>
+    </div>
   </div>
   <div id="container"></div>
 </body>
